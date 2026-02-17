@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <aside>
+        
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="profile-pic">
+        
+        <h3>{{ site.author }}</h3>
+        <p>{{ site.description }}</p>
+        <nav>
+            <p><a href="/">Inicio</a></p>
+        </nav>
+    </aside>
+
+    <main>
+        {{ content }}
+    </main>
+</body>
+</html>
