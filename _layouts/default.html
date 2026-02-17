@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: site.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+
     <aside>
+        <img src="https://ui-avatars.com/api/?name=Tu+Nombre&background=random&size=200" alt="Avatar" class="profile-pic">
         
-        <img src="https://via.placeholder.com/150" alt="Avatar" class="profile-pic">
-        
-        <h3>{{ site.author }}</h3>
+        <h1>{{ site.author }}</h1>
         <p>{{ site.description }}</p>
+
         <nav>
-            <p><a href="/">Inicio</a></p>
+            <a href="/">Inicio</a>
+            <a href="https://github.com/dalagla" target="_blank">GitHub</a>
         </nav>
     </aside>
 
     <main>
         {{ content }}
     </main>
+
 </body>
 </html>
