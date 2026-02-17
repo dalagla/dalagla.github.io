@@ -1,0 +1,14 @@
+---
+layout: default
+title: Inicio
+---
+
+{% for post in site.posts %}
+    <a href="{{ post.url }}">
+        <div class="post-card">
+            <h2>{{ post.title }}</h2>
+            <small>{{ post.date | date: "%d/%m/%Y" }}</small>
+            <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+        </div>
+    </a>
+{% endfor %}
