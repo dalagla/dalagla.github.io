@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "post de prueba"
-date: 2025-02-17
+date: 2026-02-17
 ---
 contenido
 
