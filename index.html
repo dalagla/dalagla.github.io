@@ -1,12 +1,52 @@
----
-layout: default
-title: Inicio
----
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tu Nombre — Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-{% for post in site.posts %}
-    <a href="{{ post.url }}" class="post-item">
-        <span class="post-date">{{ post.date | date: "%d de %B, %Y" }}</span>
-        <h2>{{ post.title }}</h2>
-        <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 20 }}</p>
-    </a>
-{% endfor %}
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="avatar">TN</div>
+      <h1 class="name">Tu Nombre</h1>
+      <p class="bio">Estudiante de Informática. Escribo sobre IA, tecnología y lo que me parece interesante.</p>
+      <span class="tag">Inteligencia Artificial</span>
+      <span class="tag">Investigación</span>
+    </div>
+  </aside>
+
+  <main class="content">
+    <header class="content-header">
+      <p class="label">Artículos</p>
+    </header>
+
+    <div class="posts">
+
+      <a href="articulos/ia-y-educacion.html" class="post-card">
+        <div class="post-meta">
+          <span class="post-date">Abril 2025</span>
+          <span class="post-tag">IA</span>
+        </div>
+        <h2 class="post-title">IA y Educación: ¿Herramienta o amenaza?</h2>
+        <p class="post-excerpt">Un análisis sobre cómo la inteligencia artificial está transformando los sistemas educativos y qué implica para el futuro del aprendizaje.</p>
+        <span class="post-read">Leer artículo →</span>
+      </a>
+
+      <a href="articulos/modelos-de-lenguaje.html" class="post-card">
+        <div class="post-meta">
+          <span class="post-date">Marzo 2025</span>
+          <span class="post-tag">LLMs</span>
+        </div>
+        <h2 class="post-title">Cómo funcionan los modelos de lenguaje</h2>
+        <p class="post-excerpt">Desde los transformers hasta ChatGPT: una explicación accesible de la arquitectura detrás de los grandes modelos de lenguaje.</p>
+        <span class="post-read">Leer artículo →</span>
+      </a>
+
+    </div>
+  </main>
+
+</body>
+</html>
