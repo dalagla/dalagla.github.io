@@ -7,6 +7,55 @@
   <link rel="stylesheet" href="../style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
+  <style>
+    body {
+  <div class="site-wrap">
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 24px;
+      background: #111;
+      color: #e2e2e2;
+    }
+
+    .site-wrap {
+      width: min(1120px, 100%);
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 56px;
+      min-height: 100vh;
+    }
+
+    .site-wrap .sidebar {
+      position: static;
+      width: auto;
+      min-height: auto;
+      padding: 3.5rem 0;
+    }
+
+    .site-wrap .content {
+      margin-left: 0;
+      max-width: 760px;
+      padding: 3.5rem 0;
+    }
+
+    .site-wrap .tag { display: none; }
+
+    .site-wrap .bio { color: #888; }
+
+    @media (max-width: 900px) {
+      body { padding: 0; }
+      .site-wrap {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .site-wrap .sidebar,
+      .site-wrap .content {
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
 <body>
 
   <aside class="sidebar">
@@ -34,6 +83,7 @@
       <div class="article-body">
         <p>
           La inteligencia artificial ha dejado de ser ciencia ficción para convertirse en una presencia cotidiana en nuestras vidas. En el ámbito educativo, su irrupción plantea preguntas que van más allá de la tecnología: ¿qué significa aprender cuando una máquina puede hacerlo por ti?
+  </div>
         </p>
 
         <h2>El estado actual</h2>
