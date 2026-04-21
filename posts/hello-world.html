@@ -4,23 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Research Notes — Your Name</title>
-  <link rel="stylesheet" href="../style.css?v=4">
-  <link rel="stylesheet" href="../css/post.css?v=2">
 
-  <!-- Highlight.js (ligero, CDN) -->
+  <link rel="stylesheet" href="../style.css?v=5" />
+  <link rel="stylesheet" href="../css/post.css?v=3" />
+
+  <!-- Highlight.js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark-dimmed.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/languages/python.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/languages/bash.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/languages/javascript.min.js"></script>
 
-  <!-- KaTeX para fórmulas -->
+  <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
 
-  <!-- Helpers propios -->
-  <script defer src="../scripts/helpers.js"></script>
+  <!-- Helpers -->
+  <script defer src="../scripts/helpers.js?v=3"></script>
 </head>
 <body>
 
@@ -37,15 +38,11 @@
 
     <nav class="social">
       <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="social-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
-          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
       </a>
       <a href="mailto:you@example.com" class="social-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
-          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
         Email
       </a>
     </nav>
@@ -77,8 +74,7 @@
           <h2>Introducción</h2>
           <p>
             Cuando evaluamos modelos o técnicas defensivas, es clave mantener trazabilidad y reproducibilidad. 
-            A lo largo del texto verás <code>code blocks</code>, fórmulas con KaTeX, figuras, tablas y más. 
-            También puedes ejecutar pequeños snippets JS para validar ideas rápidas.
+            A lo largo del texto verás <code>code blocks</code>, fórmulas con KaTeX, figuras, tablas y más.
           </p>
 
           <blockquote>
@@ -86,18 +82,9 @@
           </blockquote>
 
           <div class="kpi-grid">
-            <div class="kpi">
-              <div class="kpi-label">Muestras</div>
-              <div class="kpi-value">12,480</div>
-            </div>
-            <div class="kpi">
-              <div class="kpi-label">Tiempo de cómputo</div>
-              <div class="kpi-value">3.2 h</div>
-            </div>
-            <div class="kpi">
-              <div class="kpi-label">AUC preliminar</div>
-              <div class="kpi-value">0.91</div>
-            </div>
+            <div class="kpi"><div class="kpi-label">Muestras</div><div class="kpi-value">12,480</div></div>
+            <div class="kpi"><div class="kpi-label">Tiempo de cómputo</div><div class="kpi-value">3.2 h</div></div>
+            <div class="kpi"><div class="kpi-label">AUC preliminar</div><div class="kpi-value">0.91</div></div>
           </div>
 
           <figure>
@@ -119,8 +106,7 @@
 source .venv/bin/activate
 pip install -U pip wheel setuptools
 pip install -r requirements.txt
-python -c "import platform; print(platform.python_version())"
-</code></pre>
+python -c "import platform; print(platform.python_version())"</code></pre>
 
           <details>
             <summary>Detalles del dataset (colapsable)</summary>
@@ -134,14 +120,7 @@ python -c "import platform; print(platform.python_version())"
 
           <h2>Resultados</h2>
           <table class="data-table">
-            <thead>
-              <tr>
-                <th>Modelo</th>
-                <th>Precision</th>
-                <th>Recall</th>
-                <th>F1</th>
-              </tr>
-            </thead>
+            <thead><tr><th>Modelo</th><th>Precision</th><th>Recall</th><th>F1</th></tr></thead>
             <tbody>
               <tr><td>Baseline</td><td>0.84</td><td>0.79</td><td>0.81</td></tr>
               <tr><td>Model-X</td><td>0.88</td><td>0.83</td><td>0.85</td></tr>
@@ -166,29 +145,26 @@ def score(y_true, y_prob):
 y_true = np.array([0,1,1,0,1,0,1,0])
 y_prob = np.array([0.1,0.7,0.8,0.2,0.6,0.3,0.9,0.4])
 
-print("AUC:", score(y_true, y_prob))
-</code></pre>
+print("AUC:", score(y_true, y_prob))</code></pre>
 
-          <h3>Tabs de código (mismo concepto en varios lenguajes)</h3>
+          <h3>Tabs de código (multi‑lenguaje)</h3>
           <div class="code-tabs" data-name="hash">
             <pre data-lang="Python"><code class="language-python">import hashlib
 print(hashlib.sha256(b"hello").hexdigest()[:16])</code></pre>
 
             <pre data-lang="Bash"><code class="language-bash">echo -n "hello" | sha256sum | cut -c1-16</code></pre>
 
-            <pre data-lang="JavaScript" data-run="js"><code class="language-js">// Hash SHA-256 del string "hello" (en navegador)
+            <pre data-lang="JavaScript"><code class="language-js">// Hash SHA-256 del string "hello" (en navegador)
 async function sha256Hex(s) {
   const data = new TextEncoder().encode(s);
   const hash = await crypto.subtle.digest("SHA-256", data);
   return [...new Uint8Array(hash)].map(b => b.toString(16).padStart(2, "0")).join("");
 }
-sha256Hex("hello").then(h => console.log(h.slice(0,16)));
-</code></pre>
+sha256Hex("hello").then(h => console.log(h.slice(0,16)));</code></pre>
           </div>
 
-          <h3>Snippet ejecutable (JS)</h3>
-          <p>Para micro‑pruebas rápidas en el navegador:</p>
-          <pre data-lang="JavaScript" data-run="js"><code class="language-js">function mean(xs){ return xs.reduce((a,b)=>a+b,0)/xs.length; }
+          <h3>Snippet JavaScript</h3>
+          <pre data-lang="JavaScript"><code class="language-js">function mean(xs){ return xs.reduce((a,b)=>a+b,0)/xs.length; }
 const xs = [1,2,3,4,5];
 console.log("mean:", mean(xs));</code></pre>
 
@@ -197,11 +173,11 @@ console.log("mean:", mean(xs));</code></pre>
             <p>Si el tema es ciberseguridad, evita publicar PoC dañinas sin mitigaciones y contexto. Usa entornos aislados.</p>
           </div>
 
-          <h2>Conclusiones</h2>
+          <h2>Conlusiones</h2>
           <ul>
-            <li>Layout y helpers listos para artículos serios.</li>
-            <li>Snippets con copy, tabs y ejecución de JS integrada.</li>
-            <li>TOC automático, progreso de lectura y lectura estimada.</li>
+            <li>Helpers listos y snippets solo con copia.</li>
+            <li>TOC automático, progreso y tiempo estimado.</li>
+            <li>Fórmulas, tablas, figuras y callouts.</li>
           </ul>
 
           <section class="footnotes" id="refs">
