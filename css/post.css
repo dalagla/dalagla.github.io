@@ -29,16 +29,15 @@
 .prose blockquote{border-left:2px solid var(--border);padding:.5rem 1rem;color:var(--text-muted);font-style:italic;background:var(--bg-subtle)}
 .prose code:not(pre code){background:var(--bg-subtle);border:1px solid var(--border);padding:.05rem .3rem;border-radius:4px;font:0.86em var(--font-mono);color:#dedede}
 
-/* Code blocks */
+/* Code blocks (solo copy) */
 .code-block{position:relative;border:1px solid var(--border);border-radius:6px;overflow:hidden;background:#0c0c0c;margin:1rem 0}
 .code-toolbar{position:absolute;top:6px;right:6px;display:flex;gap:6px;z-index:3}
 .lang-badge{position:absolute;top:6px;left:8px;font:0.64rem var(--font-mono);color:var(--text-muted);background:rgba(255,255,255,.03);border:1px solid var(--border);padding:2px 6px;border-radius:4px;z-index:3}
-.copy-btn,.run-btn{font:0.7rem var(--font-mono);color:var(--text-muted);background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:4px;padding:3px 8px;cursor:pointer}
-.copy-btn:hover,.run-btn:hover{color:var(--link-hover)}
-/* deja espacio arriba para la toolbar/badge */
+.copy-btn{font:0.7rem var(--font-mono);color:var(--text-muted);background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:4px;padding:3px 8px;cursor:pointer}
+.copy-btn:hover{color:var(--link-hover)}
+/* espacio superior para toolbar/badge */
 .code-block pre{margin:0;padding:1.25rem 1rem 1rem;background:transparent !important}
 .code-block pre code{background:transparent !important;display:block;overflow:auto}
-.code-output{border-top:1px solid var(--border);background:#0b0b0b;font:0.8rem var(--font-mono);color:#c5c5c5;padding:.75rem 1rem;max-height:220px;overflow:auto}
 
 /* Tabs de código */
 .code-tabs{border:1px solid var(--border);border-radius:6px;overflow:hidden;background:#0c0c0c;margin:1rem 0}
@@ -69,9 +68,13 @@ figcaption{font:.72rem var(--font-mono);color:var(--text-muted);padding:.5rem .8
 /* Progreso lectura */
 .progress{position:fixed;top:0;left:0;height:2px;width:100%;background:linear-gradient(90deg,#4ade80,#60a5fa);transform:scaleX(0);transform-origin:0 0;z-index:1000}
 
-/* Otros */
-.prose details{border:1px solid var(--border);border-radius:6px;padding:.6rem .8rem;background:var(--bg-subtle)}
+/* Details (colapsables) — FIX bullets dentro */
+.prose details{border:1px solid var(--border);border-radius:6px;padding:.6rem .8rem;background:var(--bg-subtle);overflow:hidden}
 .prose details summary{font:.78rem var(--font-mono);cursor:pointer;color:var(--accent)}
+.prose details ul,
+.prose details ol{list-style-position:inside;padding-left:.2rem;margin:.5rem 0 0}
+
+/* Footnotes */
 .footnotes{margin-top:2rem;border-top:1px solid var(--border);padding-top:1rem;font:.8rem var(--font-mono);color:var(--text-muted)}
 
 /* Responsive */
